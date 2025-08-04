@@ -1,0 +1,4 @@
+streamlit
+scikit-learn
+numpy
+pandas    # if your model pipeline uses it
