@@ -13,7 +13,7 @@ def load_model():
 model = load_model()
 
 # ─── App header ──────────────────────────────────────────────────
-st.title("🏠 Real-Estate Price Predictor")
+st.title(" Real-Estate Price Predictor")
 st.markdown("Adjust the property features below and click **Predict**.")
 
 # ─── Dynamically build inputs from your model’s feature names ─────
@@ -36,3 +36,4 @@ if st.button("Predict Price"):
     X = np.array([list(inputs.values())])
     price = model.predict(X)[0]
     st.success(f"Estimated market price: ₹ {price:,.2f}")
+
